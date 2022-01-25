@@ -1,0 +1,14 @@
+def BMI():
+    height=float(input("Enter yout height in Meters"))
+    weight=float(input("Enter yout weight in Kg"))
+    bmi=weight/height**2
+    if bmi<18.5:
+        return f"Your BMI is:{bmi} /n Your are Underweight"
+    elif bmi>=18.5 and bmi<25.0:
+        return f"Your BMI is:{bmi} /n Your are of Healthy weight"
+    elif bmi>=25.0 and bmi<30.0:
+        return f"Your BMI is:{bmi} /n Your are Overweight"
+    else:
+        return f"Your BMI is:{bmi} /n Your are Obese"
+    
+BMI()
